@@ -1,15 +1,15 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "dromozoa-zmq"
-version = "1.6-1"
+version = "1.7-1"
 -- LuaDist source
 source = {
-  tag = "1.6-1",
+  tag = "1.7-1",
   url = "git://github.com/LuaDist-testing/dromozoa-zmq.git"
 }
 -- Original source
 -- source = {
---   url = "https://github.com/dromozoa/dromozoa-zmq/releases/download/v1.6/dromozoa-zmq-1.6.tar.gz";
+--   url = "https://github.com/dromozoa/dromozoa-zmq/releases/download/v1.7/dromozoa-zmq-1.7.tar.gz";
 -- }
 description = {
   summary = "Lua bindings for ZeroMQ";

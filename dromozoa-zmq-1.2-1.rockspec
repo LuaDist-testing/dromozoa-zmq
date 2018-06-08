@@ -1,15 +1,15 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "dromozoa-zmq"
-version = "1.1-1"
+version = "1.2-1"
 -- LuaDist source
 source = {
-  tag = "1.1-1",
+  tag = "1.2-1",
   url = "git://github.com/LuaDist-testing/dromozoa-zmq.git"
 }
 -- Original source
 -- source = {
---   url = "https://github.com/dromozoa/dromozoa-zmq/releases/download/v1.1/dromozoa-zmq-1.1.tar.gz";
+--   url = "https://github.com/dromozoa/dromozoa-zmq/releases/download/v1.2/dromozoa-zmq-1.2.tar.gz";
 -- }
 description = {
   summary = "Lua bindings for ZeroMQ";
@@ -19,6 +19,6 @@ description = {
 }
 build = {
   type = "command";
-  build_command = "env PATH=\"$(LUA_BINDIR):$PATH\" CPPFLAGS=\"$CPPFLAGS -I$(LUA_INCDIR)\" CXXFLAGS='-Wall -W -Wno-missing-field-initializers $(CFLAGS)' LDFLAGS=\"$LDFLAGS -L$(LUA_LIBDIR)\" LUA='$(LUA)' ./configure --prefix='$(PREFIX)' && make";
+  build_command = "env PATH=\"$(LUA_BINDIR):$PATH\" CPPFLAGS=\"$CPPFLAGS -I$(LUA_INCDIR)\" CXXFLAGS=\"$CXXFALGS -Wall -W -Wno-missing-field-initializers $(CFLAGS)\" LDFLAGS=\"$LDFLAGS -L$(LUA_LIBDIR)\" LUA='$(LUA)' ./configure --prefix='$(PREFIX)' && make";
   install_command = "make luadir='$(LUADIR)' luaexecdir='$(LIBDIR)/dromozoa' install";
 }
